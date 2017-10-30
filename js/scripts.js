@@ -16,13 +16,20 @@ $(document).ready(function() {
 
     $("#myTasks").append("<span class='remove'><li>" + taskInput + "</li></span>");
     $("#time").append("<span class='remove'><li>" + taskTime + "</li></span>");
-    $("#complete").append("<span class='done remove'><li>Click to remove</li></span>");
+    $("#complete").append("<span class='done'><li>Click to remove</li></span>");
+
+    $(".done").click(function() {
+      $("#myTasks").show();
+      // $(".remove").empty();
+      // $("#complete").append("It works");
+      // $("#myTasks").append("DONE!");
+    });
   })
 
-  $(".done").click(function() {
-    $("#myTasks").show();
-    // $(".remove").empty();
-    // $("#complete").append("It works");
-    // $("#myTasks").append("DONE!");
-  });
+  // $(".done").click(function() {
+  //   $("#myTasks").show();
+  //   // $(".remove").empty();
+  //   // $("#complete").append("It works");
+  //   // $("#myTasks").append("DONE!");
+  // });
 })
