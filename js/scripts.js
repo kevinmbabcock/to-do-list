@@ -4,6 +4,8 @@ function Task (task, time) {
 }
 
 $(document).ready(function() {
+
+  
   $("#addTask").submit(function(event) {
     event.preventDefault();
     var taskInput = $("#newTask").val();
