@@ -15,22 +15,32 @@
           <label for="newTask">What do you need to do?</label>
           <input id="newTask" class="form-control" type="text">
         </div>
+        <div class="form-group">
+          <label for"taskTime">How long will this task take(minutes)?</label>
+          <input id="taskTime" class="form-control" type="text">
+        </div>
         <button type="submit" class="btn">Add task</button>
         <p></p>
-
       </form>
+
       <div class="row">
         <div class="col-md-4">
-          <h2>To Do List:</h2>
-          <ul id="myTasks">
+          <h3>To Do List:</h3>
+          <ol id="myTasks">
 
-          </ul>
+          </ol>
         </div>
         <div class="col-md-4">
-          <h2>Status:</h2>
-          <ul id="complete">
+          <h3>Approx. Time:</h3>
+          <ol id="time">
 
-          </ul>
+          </ol>
+        </div>
+        <div class="col-md-4">
+          <h3>Complete?</h3>
+          <ol id="complete">
+
+          </ol>
         </div>
       </div>
     </div>

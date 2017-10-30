@@ -6,3 +6,7 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+#myTasks {
+  display: none;
+}
